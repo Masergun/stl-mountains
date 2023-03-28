@@ -1,31 +1,31 @@
-# Mountains STL
+# Горы STL
 
-## Program Description
+## Описание программы
 
-This program generates a 3D projection of a hypercube (tesseract) as well as a mountainous landscape and saves it in an STL file format. The tesseract is generated as a set of vertices and faces using the numpy library, while the landscape is generated as a set of random points with a height map added to it, triangulated using the Delaunay function from the scipy library, and converted to facets. The facets are then written to an STL file format using a custom function.
+Эта программа генерирует 3D-проекцию гиперкуба (тессеракта), а также горный ландшафт и сохраняет его в формате файла STL. Тессеракт генерируется как набор вершин и граней с использованием библиотеки numpy, в то время как ландшафт генерируется как набор случайных точек с добавленной к нему картой высот, триангулируется с использованием функции Delaunay из библиотеки scipy и преобразуется в грани. Затем грани записываются в формат файла STL с использованием пользовательской функции.
 
-## Usage
+## Использование
 
-1. Install python and the required libraries (`numpy`, `scipy`).
+1. Установите python и необходимые библиотеки (numpy, scipy).
 
-2. Run the `generate.py` script in the command line using Python:
+2. Запустите generate.py скрипт в командной строке, используя Python:
 
    ```
    python generate.py
    ```
 
-3. The script will generate a file called `tesseract_landscape.stl` in the same directory, which can be imported into a 3D modeling software or a 3D printer software.
+3. Скрипт сгенерирует файл с именем tesseract_landscape.stl в том же каталоге, который можно импортировать в программное обеспечение для 3D-моделирования или программное обеспечение для 3D-принтера.
 
-## Customization
+## Настройка
 
-To customize the tesseract or the landscape, you can modify the `generate_tesseract()` and `generate_landscape()` functions in the `generate.py` script respectively. You can also modify the parameters of each function to obtain different forms and shapes.
+Чтобы настроить тессеракт или ландшафт, вы можете изменить generate_tesseract() и generate_landscape() функции в generate.py скрипте соответственно. Вы также можете изменять параметры каждой функции для получения различных форм.
 
-## Requirements
+## Требования
 
-* Python 3.0 or higher
+* Python 3.0 или выше
 * NumPy
 * SciPy
 
-## Acknowledgments
+## Благодарности
 
-This program is inspired by similar programs found online, and makes use of the NumPy and SciPy libraries to generate the tesseract and the landscape.
+Эта программа основана на аналогичных программах, найденных в Интернете, и использует библиотеки NumPy и SciPy для создания тессеракта и ландшафта.
